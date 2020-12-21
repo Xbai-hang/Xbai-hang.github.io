@@ -150,6 +150,85 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-生活点滴-财务管理" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/12/21/%E7%94%9F%E6%B4%BB%E7%82%B9%E6%BB%B4-%E8%B4%A2%E5%8A%A1%E7%AE%A1%E7%90%86/">生活点滴-财务管理</a>
+    </h1>
+  
+
+        
+        <a href="/2020/12/21/%E7%94%9F%E6%B4%BB%E7%82%B9%E6%BB%B4-%E8%B4%A2%E5%8A%A1%E7%AE%A1%E7%90%86/" class="archive-article-date">
+  	<time datetime="2020-12-21T13:40:59.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-12-21</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <!-- 写博客时可以自动更新,做到类似于live server的效果 <meta http-equiv="refresh" content="20"> -->
+
+
+<p><img src="https://i.loli.net/2020/12/21/6t3CwEIfz72na5G.png" alt="冬至快乐"></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;冬至了，一年就要过完了，2020真是多灾多难的一年；😟</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;想来大二生活也快要过半了，自己还是无所事事，心中难免有些失落；大二刚开学时还坚持着做财务规划，记录每一笔流水账，坚持了两个月就给忘掉了，也快跨年了，就在这里立个flag吧，一年后来汇报情况：💪💪💪</p>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/12/21/%E7%94%9F%E6%B4%BB%E7%82%B9%E6%BB%B4-%E8%B4%A2%E5%8A%A1%E7%AE%A1%E7%90%86/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-C++避坑" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -170,13 +249,13 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>​        前几天做数据结构实验的时候(最近貌似只有这个时候用的到C++)踩到的坑，记录一下排坑过程；涉及到<a href="#namespace">#命名空间</a>的知识点，以及一些<a href="#C++11">C++11</a>新标准(<code>auto</code>)的记录，只想解决同类问题的小伙伴可以直接跳转<a href="#solution">问题解决</a>或者<a href="#picture">一图解决问题</a>；</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;前几天做数据结构实验的时候(最近貌似只有这个时候用的到C++)踩到的坑，记录一下排坑过程；涉及到<a href="#namespace">#命名空间</a>的知识点，以及一些<a href="#C++11">C++11</a>新标准(<code>auto</code>)的记录，只想解决同类问题的小伙伴可以直接跳转<a href="#solution">问题解决</a>或者<a href="#picture">一图解决问题</a>；</p>
 <h2 id="C-全局-文件-变量"><a href="#C-全局-文件-变量" class="headerlink" title="C++全局(文件)变量"></a>C++全局(文件)变量</h2><h3 id="代码重现-简化"><a href="#代码重现-简化" class="headerlink" title="代码重现(简化)"></a>代码重现(简化)</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="keyword">int</span> count=<span class="number">0</span>;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">fun</span><span class="params">()</span></span>&#123;</span><br><span class="line">	<span class="built_in">printf</span>(<span class="string">&quot;%d&quot;</span>,++count);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">	fun();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<h3 id="问题分析"><a href="#问题分析" class="headerlink" title="问题分析"></a>问题分析</h3><p>​        代码看上去再正常不过了，甚至对这其中的概念不清楚可能就完全不知道哪里错了；这里先卖个关子，来看报错信息，养成良好的解决问题的习惯是关键；</p>
+<h3 id="问题分析"><a href="#问题分析" class="headerlink" title="问题分析"></a>问题分析</h3><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;代码看上去再正常不过了，甚至对这其中的概念不清楚可能就完全不知道哪里错了；这里先卖个关子，来看报错信息，养成良好的解决问题的习惯是关键；</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[Error] reference to &#x27;count&#x27; is ambiguous</span><br></pre></td></tr></table></figure>
 
-<p>​        实际问题中可能报错信息有连锁反应是一长串，这个报错其实也是，我们要学会从报错信息中提取关键信息来解决问题，上面是我提取之后的结果，原报错信息是这样的：</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;实际问题中可能报错信息有连锁反应是一长串，这个报错其实也是，我们要学会从报错信息中提取关键信息来解决问题，上面是我提取之后的结果，原报错信息是这样的：</p>
 <p><img src="https://i.loli.net/2020/12/08/I8AWbZon5mFHTtw.png"></p>
         
       
@@ -409,6 +488,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">C/C++</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">随笔</a>
               </li>
             
             <div class="clearfix"></div>
